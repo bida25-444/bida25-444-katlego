@@ -42,27 +42,36 @@ nav a:hover{
 
 /* HERO SECTION */
 
-.hero{
+
+   .hero{
     height:90vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-    background:url(images/banner.jpg.jpeg);
+
+    color:white;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('../images/banner.jpg');
+
     background-size:cover;
     background-position:center;
-    color:white;
 }
 
 .hero h1{
-    font-size:60px;
+    font-size:70px;
     margin-bottom:20px;
-}
+    color:white;
+}   
+
 
 .hero p{
-    font-size:22px;
+    font-size:24px;
     margin-bottom:30px;
+    color:white;
 }
 
 .btn{
