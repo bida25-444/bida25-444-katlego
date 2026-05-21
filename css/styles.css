@@ -60,7 +60,9 @@ nav a:hover{
     background-size:cover;
     background-position:center;
 }
-
+.hero-text p{
+    font-size: 24px;
+}
 .hero h1{
     font-size:70px;
     margin-bottom:20px;
@@ -73,7 +75,14 @@ nav a:hover{
     margin-bottom:30px;
     color:white;
 }
-
+.hero button{
+    padding: 12px 25px;
+    border: none;
+    background-color: pink;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 .btn{
     background:#ff4d88;
     color:white;
@@ -146,7 +155,7 @@ nav a:hover{
 }
 
 .gallery img{
-    width:100%;
+    width: 40px;;
     border-radius:15px;
 }
 .contact{
@@ -198,4 +207,22 @@ footer{
         width:90%;
     }
 
+}
+nav{
+    background-color: white;
+    padding: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    font-size: 22px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: pink;
 }
