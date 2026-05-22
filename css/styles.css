@@ -1,116 +1,84 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: #f3f3f3;
+body{
+  background:#f7f0f2;
 }
 
 /* HEADER */
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 
-    padding: 35px 90px;
-    background: #f3f3f3;
+  padding:40px 80px;
+  background:white;
 }
 
-.logo {
-    font-size: 5rem;
-    font-weight: bold;
-    line-height: 1.1;
+.logo{
+  font-size:70px;
+  font-weight:bold;
 }
 
-/* NAVIGATION */
-
-nav {
-    background: white;
-
-    padding: 45px 120px;
-
-    display: flex;
-    gap: 90px;
-
-    border-radius: 2px;
+nav{
+  display:flex;
+  gap:120px;
 }
 
-nav a {
-    text-decoration: none;
-    color: black;
-
-    font-size: 1.2rem;
-    font-weight: bold;
-
-    transition: 0.3s;
+nav a{
+  text-decoration:none;
+  color:black;
+  font-size:28px;
+  font-weight:bold;
 }
 
-nav a:hover {
-    color: pink;
+/* CONTACT SECTION */
+
+.contact-section{
+  display:flex;
+  justify-content:center;
+
+  padding:60px 20px;
 }
 
-/* HERO SECTION */
+.contact-form{
+  width:100%;
+  max-width:1000px;
 
-.hero {
-    height: 85vh;
-
-    background:
-        linear-gradient(rgba(0,0,0,0.35),
-        rgba(0,0,0,0.35)),
-        url("images/banner.jpg");
-
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
+  display:flex;
+  flex-direction:column;
+  gap:30px;
 }
 
-/* HERO TEXT */
+.contact-form input,
+.contact-form textarea{
+  width:100%;
 
-.hero-text h1 {
-    color: white;
+  padding:25px;
+  font-size:20px;
 
-    font-size: 3rem;
-    font-weight: bold;
-
-    margin-bottom: 15px;
+  border:1px solid #999;
+  background:white;
 }
 
-.hero-text p {
-    color: white;
-
-    font-size: 1.2rem;
-
-    margin-bottom: 20px;
+.contact-form textarea{
+  height:140px;
+  resize:none;
 }
 
-/* BUTTON */
+.contact-form button{
+  padding:25px;
 
-.hero-text button {
-    padding: 18px 40px;
+  border:none;
 
-    border: none;
-    border-radius: 10px;
+  background:#ff4f93;
+  color:white;
 
-    background: #f7b6c8;
-
-    color: white;
-    font-size: 1.1rem;
-    font-weight: bold;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-
-.hero-text button:hover {
-    background: #f29ab4;
+  font-size:24px;
+  cursor:pointer;
 }
