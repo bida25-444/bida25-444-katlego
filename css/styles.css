@@ -144,9 +144,10 @@ nav a:hover{
 
 .hero{
     height: 90vh;
-    background: 
+
+    background-image:
         linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-        url("images/banner.jpg");
+        url("../images/nails-banner.jpg");
 
     background-size: cover;
     background-position: center;
