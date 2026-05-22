@@ -148,7 +148,7 @@ nav a:hover{
     height:85vh;
 
     background:
-    url("../images/nails.jpg");
+    url("images/banner.jpg");
 
     background-size:cover;
     background-position:center;
@@ -160,6 +160,7 @@ nav a:hover{
     text-align:center;
 
     overflow:hidden;
+
 }
 
 /* DARK OVERLAY */
@@ -174,6 +175,11 @@ nav a:hover{
     height:100%;
 
     background:rgba(0,0,0,0.35);
+
+    .hero-text{
+    position:relative;
+    z-index:2;
+}
 }
 
 /* HERO TEXT */
