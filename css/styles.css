@@ -166,7 +166,6 @@ nav a:hover{
 /* DARK OVERLAY */
 
 .overlay{
-    position:absolute;
 
     top:0;
     left:0;
@@ -228,4 +227,50 @@ nav a:hover{
 
 .hero-text button:hover{
     background:#f39db5;
+}
+/* GALLERY SECTION */
+
+.gallery-section{
+    background:#f5ecef;
+
+    padding:80px 60px;
+}
+
+/* GRID */
+
+.gallery-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:35px;
+
+    max-width:1400px;
+
+    margin:auto;
+}
+
+/* IMAGES */
+
+.gallery-grid img{
+    width:100%;
+
+    height:420px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+
+    transition:0.3s;
+
+    cursor:pointer;
+}
+
+/* HOVER EFFECT */
+
+.gallery-grid img:hover{
+    transform:scale(1.03);
 }
