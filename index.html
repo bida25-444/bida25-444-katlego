@@ -1,68 +1,170 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kats Nails | Professional Nail Care</title>
+<style>
+  /* 1. Reset + Fonts */
+    * {margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', Arial, sans-serif;}
+  body {background:#fff; color:#333; line-height:1.6;}
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-<html lang="en"> 
+  /* 2. Colors */
+  :root {
+    --primary: #f4a6b8; /* soft pink like nails */
+    --dark: #2b2b2b;
+    --light: #f9f9f9;
+  }
 
-<head> 
+  /* 3. Navbar */
+  header {
+    background:#fff;
+    padding:15px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    z-index:100;
+  }
+  header h1 {font-size:1.5rem; color:var(--dark);}
+  nav ul {list-style:none; display:flex; gap:25px;}
+  nav a {text-decoration:none; color:var(--dark); font-weight:500;}
+  nav a:hover {color:var(--primary);}
 
-    <meta charset="UTF-8"> 
+  /* Mobile menu */
+  .menu-toggle {display:none; font-size:1.8rem; cursor:pointer;}
+  @media(max-width:768px){
+    nav ul {
+      display:none;
+      flex-direction:column;
+      background:#fff;
+      position:absolute;
+      top:60px;
+      right:5%;
+      width:200px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
+      padding:15px;
+      border-radius:8px;
+    }
+    nav ul.show {display:flex;}
+    .menu-toggle {display:block;}
+  }
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  /* 4. Hero Section */
+  .hero {
+    background:url(images/banner.jpg) center/cover no-repeat;
+    height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+    position:relative;
+  }
+  .hero::after {
+    content:'';
+    position:absolute;
+    top:0; left:0; width:100%; height:100%;
+    background:rgba(0,0,0,0.4);
+  }
+  .hero-content {position:relative; z-index:2; max-width:600px; padding:20px;}
+  .hero h2 {font-size:2.5rem; margin-bottom:10px;}
+  .hero p {font-size:1.1rem; margin-bottom:20px;}
+  .btn {
+    background:var(--primary);
+    color:#fff;
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+  }
+  .btn:hover {background:#e88ca1;}
 
-    <title>My First GitHub Page</title> 
-<link rel="stylesheet" href="css/styles.css">
-</head> 
+  /* 5. Sections */
+  section {padding:60px 8%; text-align:center;}
+  section h3 {font-size:2rem; margin-bottom:20px; color:var(--dark);}
 
-<body> 
+  /* 6. Gallery Grid */
+  .gallery {
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:15px;
+  }
+  .gallery img {
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:0.3s;
+  }
+  .gallery img:hover {transform:scale(1.05);}
 
-   <header>
+  /* 7. Footer */
+  footer {
+    background:var(--dark);
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+  }
 
-    <h1 class="logo">Kats Nails</h1>
+  /* 8. Responsive text */
+  @media(max-width:600px){
+    .hero h2 {font-size:1.8rem;}
+    section {padding:40px 5%;}
+  }
+</style>
+</head>
+<body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
+<header>
+  <h1>Kats Nails</h1>
+  <div class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('show')">☰</div>
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-        </nav> 
-    </header> 
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h2>Beautiful Nails For Every Occasion</h2>
+    <p>Professional nail care and modern nail art.</p>
+    <a href="contact.html" class="btn">Book Appointment</a>
+  </div>
+</section>
 
- <section class="hero">
-    <div class="hero-text"
-        <h1>Beautiful Nails For Every Occasion</h1>
-        <p>Professional nail care and modern nail art.</p>
-        <button> Book Appointment</button> 
- </div>
- </section>
+<section id="about.html">
+  <h3>About Us</h3>
+  <p>At Kats Nails we bring salon-quality care with a personal touch. Clean, safe, and trendy nail art for everyone.</p>
+</section>
 
-    <main> 
+<section id="gallery.html">
+  <h3>Our Work</h3>
+  <div class="gallery">
+    <img src="images/nail1.jpg">
+    <img src="images/nail2.jpg">
+    <img src="images/nail3.jpg">
+  </div>
+</section>
 
-    
+<section id="contact.html">
+  <h3>Contact</h3>
+  <p>DM us on Instagram @k._.llifi or call +267 75499752</p>
+</section>
 
-         
+<footer>
+  <p>© 2025 Kats Nails. All rights reserved.</p>
+</footer>
 
-        <p>Visit <a href="https://bida25-444.github.io/bida25-444-katlego/">GitHub</a> to learn more about coding.</p> 
-
-    </main> 
-
- 
-
-    <footer> 
-
-       <p> 2026 Kats Nails. All Rights Reserved.</p>
-<div class="socials">
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
-        <a href="#">TikTok</a>
-    </div>
-    </footer> 
-
- <script src="js/script.js"></script>
-
-</body> 
-
-</html> 
+</body>
+</html>
