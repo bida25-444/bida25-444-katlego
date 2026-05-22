@@ -79,7 +79,7 @@ nav a:hover{
 /* HERO */
 
 .hero{
-    height: 100vh;
+    padding: 50px;
     width: 100%;
 
     display: flex;
@@ -311,6 +311,8 @@ button{
     border:none;
 }
 footer{
+    position: relative;
+    width: 100%;
     background: #111;
     color: white;
 
@@ -320,7 +322,7 @@ footer{
 }
 
 .socials{
-    margin-top: 20px;
+    margin: 20px;
 }
 
 .socials a{
